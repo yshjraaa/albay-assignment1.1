@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>STYLYSH</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="#">STYLYSH</a>
+      <button
+        class="navbar-toggler navbar-dark"
+        type="button"
+        data-toggle="collapse"
+        data-target="#main-navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="page-header header container-fluid">
+      <div class="overlay"></div>
+      <div class="description">
+        <h1>WELCOME TO ILOCOS!</h1>
+        <p>There is so much to see in the world, come find it with me.</p>
+        <button class="btn btn-outline-secondary btn-lg">
+          <a href="#cont-features" class="kebtn">Keep Exploring!</a>
+        </button>
+      </div>
+    </header>
+    <div class="container features" id="cont-features">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h3 class="feature-title">San Agustin Church of Paoay</h3>
+          <img src="column1.jpg" alt="sanagustin" class="img-fluid" />
+          <p class="p-desc" id="hidetext1">
+            The Saint Augustine Church, also known as the Paoay Church, is a
+            Roman Catholic church that can be found in the Municipality of
+            Paoay, which is located in the province of Ilocos Norte in the
+            Philippines. The church was finished in 1710 and quickly became
+            well-known for its distinctive architecture, which is best
+            exemplified by the huge buttresses that line the sides and back of
+            the structure.
+          </p>
+          <button onclick="show_hide()">MORE INFORMATION</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h3 class="feature-title">La Paz Sand Dunes</h3>
+          <img src="column2.jpg" alt="lapaz" class="img-fluid" />
+          <p class="p-desc" id="hidetext2">
+            The La Paz Sand Dunes are a conserved sandy coastal desert and beach
+            that spans 85 square kilometers and can be found in the municipality
+            of Laoag in the province of Ilocos Norte in the Philippines.
+            Recreational pursuits such as sandboarding and driving 4x4 vehicles
+            are extremely well attended to in this region.
+          </p>
+          <button onclick="show_hide2()">MORE INFORMATION</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h3 class="feature-title">Casa Consuelo</h3>
+          <img src="column3.jpg" alt="casa" class="img-fluid" />
+          <p class="p-desc" id="hidetext3">
+            People who appreciate the allure of privacy and the privilege of
+            being enveloped in some of nature's most breathtaking settings will
+            find Casa Consuelo to be the ideal tropical retreat for them. The
+            one-of-a-kind huts take their design cues from traditional Ilocano
+            dwellings, but they have all the bells and whistles of a
+            contemporary bathroom. It is located at Pagudpud, Ilocos Norte.
+          </p>
+          <button onclick="show_hide3()">MORE INFORMATION</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h3 class="feature-title">The Cape Bojeador Lighthouse</h3>
+          <img src="column4.jpg" alt="cape" class="img-fluid" />
+          <p class="p-desc" id="hidetext4">
+            The Cape Bojeador Lighthouse, often referred to as the Burgos
+            Lighthouse, is a cultural heritage monument that was built in
+            Burgos, Ilocos Norte, during the Spanish Colonial period in the
+            Philippines. It is located in the municipality of Burgos. The
+            lighthouse was turned on for the first time on March 30, 1892. It
+            has been operational for more than a century, and it continues to
+            direct ships that are approaching the Philippine archipelago from
+            the north away from the hazardous rocks that are located along the
+            shore of the town.
+          </p>
+          <button onclick="show_hide4()">MORE INFORMATION</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h3 class="feature-title">The Patapat Bridge</h3>
+          <img src="column5.jpg" alt="patapat" class="img-fluid" />
+          <p class="p-desc" id="hidetext5">
+            The Patapat Bridge, sometimes referred to as the Patapat Bridge, is
+            a viaduct that can be found in the municipality of Pagudpud, which
+            is located in the province of Ilocos Norte in the Philippines.
+            Pagudpud is a seaside resort town that is located on the most
+            northern tip of the island of Luzon. The height of the bridge,
+            measured in meters above sea level, is 31.
+          </p>
+          <button onclick="show_hide5()">MORE INFORMATION</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h3 class="feature-title">White Rock Formation</h3>
+          <img src="column6.jpg" alt="whiterock" class="img-fluid" />
+          <p class="p-desc" id="hidetext6">
+            White Rock Formation, Kapurpurawan. Ilocos Norte is another
+            Philippine natural masterpiece. The Kapurpurawan Limestone Formation
+            in the province's north is a geological masterpiece. Kapurpurawan
+            Limestone Formation, with its white surface and unique formations,
+            is a must-see in Ilocos Norte.
+          </p>
+          <button onclick="show_hide6()">MORE INFORMATION</button>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <p>&copy; KINGZ.DEV 2019</p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
